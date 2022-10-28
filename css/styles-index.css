@@ -14,6 +14,7 @@ a {
 ul{
     list-style-type: none;
     padding: 0;
+    margin: 0;
     
 }
 
@@ -39,8 +40,8 @@ button {
 
 .conteiner{
     width: 1200px;
-    margin: 0;
     padding: 0 15px;
+    margin: 0;
 }
 
 
@@ -211,7 +212,10 @@ button {
 }
 
 /* Переваги */
-
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -231,8 +235,18 @@ button {
     
 }
 
+.benefits{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
 .benefits-list-conteiner{
     display: flex;
+    justify-content: space-between;
+}
+
+.benefits-list-conteiner .item +.item{
+   margin-left: 30px;
 }
 
 
