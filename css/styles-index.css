@@ -9,13 +9,18 @@ a {
     text-decoration: none;
     color: inherit;
     font-family: inherit;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
 }
 
 ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
-    
 }
 
 h1,h2,h3{
@@ -31,7 +36,7 @@ button {
     font-family: 'Roboto', sans-serif;
    
     color: var(--second-color);
-    background:var(--background-color-main);
+   
 }
 
 button {
@@ -41,7 +46,8 @@ button {
 .conteiner{
     width: 1200px;
     padding: 0 15px;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -230,10 +236,10 @@ button {
     overflow: hidden;
 }
 
-.benefits{
-    outline: 1px solid rgb(252, 12, 12);
-    
-}
+/* .benefits,
+.work{
+   background-color: var(--background-color-main);
+} */
 
 .benefits{
     display: flex;
@@ -265,13 +271,50 @@ button {
     
 }
 
-.title-second{
+/* Чим ми займаємось */
+
+.work {
+    padding-top: 0;
+}
+
+.work-list-conteiner{
+    display: flex;
+}
+
+
+.work-list-conteiner .item + .item{
+    margin-left: 30px;
+}
+
+/* Команда */
+
+.team {
+    background: #F5F4FA;
+}
+.title-second {
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
-    
+
     color: var(--title-color);
+    margin-bottom: 50px;
+}
+
+.team-list-conteiner{
+    display: flex;
+}
+
+.team-list-conteiner .item +.item{
+    margin-left: 30px;
+}
+
+.team-list-conteiner .item{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    min-height: 368px;
+    padding-bottom: 30px;
 }
 
 .team-name{
@@ -282,6 +325,7 @@ button {
     letter-spacing: 0.03em;
    
     color: var(--title-color);
+    margin-top: 30px;
 }
 
 .team-job-title{
@@ -289,12 +333,16 @@ button {
     line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
-    /* color: var(--second-color); */
+    margin-top: 10px;
 }
+
+/* Футер */
 
 .footer {
     background: #2F303A;
     color: #FFFFFF;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }    
 .footer-logo{
     color: #FFFFFF;
@@ -308,12 +356,17 @@ button {
     letter-spacing: 0.03em;
     
     color: #FFFFFF;
+    margin-top: 20px;
 }
 
 .address-footer-link{
     color: rgba(255, 255, 255, 0.6);
+    padding: 0;
 }
 
+.address-link-footer .item + .item{
+    margin-top: 9px;
+}
 /* portfolio */
 
 .filter-button:focus,
